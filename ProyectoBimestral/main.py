@@ -3,7 +3,7 @@ def juego_adivina_numero():
     numero_adivinar = random.randint(1, 100)
     intentos = 5
     print("¿En que numero estoy pensando?")
-    print(f"Tienes {intentos} intentos. ¡Buena suerte!")
+    print(f"Tienes {intentos} intentos. ")
     while intentos > 0:
         adivino = int(input("Ingresa un  numero: "))
         if adivino == numero_adivinar:
@@ -25,10 +25,8 @@ def juego_adivina_numero():
             print(f"Intentos restantes: {intentos}")
 
         if intentos == 0:
-            print(f"¡Oh no! Te has quedado sin intentos. El número era {numero_adivinar}.")
+            print(f"Te has quedado sin intentos. El número era {numero_adivinar}.")
             break
-
     print("¡Gracias por jugar!")
-
 if __name__ == "__main__":
     juego_adivina_numero()
