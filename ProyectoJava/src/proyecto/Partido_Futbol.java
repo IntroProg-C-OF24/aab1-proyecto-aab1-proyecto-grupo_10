@@ -4,7 +4,7 @@ public class Partido_Futbol {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         String posicion, nomJugador;
-        int ingresoEqui, entrar, edad, goles, sumagolesA=0, sumagolesB=0, numJugadores, penal, golesPenalA=0, golesPenalB=0, i=1, j=1, k=1, l=1;
+        int ingresoEqui, entrar, edad, goles, sumagolesA=0, sumagolesB=0, numJugadores, penal, golesPenalA=0, golesPenalB=0, i=1, j=1, k, l;
         
         System.out.println("Para ingresar datos escriba: [1 = Si] y [2 = No]");
         entrar = teclado.nextInt();
@@ -62,7 +62,7 @@ public class Partido_Futbol {
                     golesPenalB = golesPenalB + penal;
                 }
             }
-            System.out.println("Desea seguir ingresar datos escriba: [1 = Si] y [2 = No]");
+            System.out.println("Desea seguir ingresando datos escriba: [1 = Si] y [2 = No]");
             entrar = teclado.nextInt();   
         }
         System.out.println("Goles Equipo A: "+sumagolesA);
